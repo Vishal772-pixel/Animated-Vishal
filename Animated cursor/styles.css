@@ -1,0 +1,47 @@
+/* Gradient Background */
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee, #84fab0, #8fd3f4);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    overflow: hidden;
+    cursor: none;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Smoke Trail */
+.cursor-trail {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: fadeOut 1s forwards, colorChange 0.5s infinite alternate;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Fade Out Animation */
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(3);
+    }
+}
+
+/* Random Color Change Animation */
+@keyframes colorChange {
+    0% { background-color: rgba(255, 99, 71, 0.5); } /* Tomato */
+    25% { background-color: rgba(147, 112, 219, 0.5); } /* MediumPurple */
+    50% { background-color: rgba(50, 205, 50, 0.5); } /* LimeGreen */
+    75% { background-color: rgba(255, 215, 0, 0.5); } /* Gold */
+    100% { background-color: rgba(30, 144, 255, 0.5); } /* DodgerBlue */
+}
