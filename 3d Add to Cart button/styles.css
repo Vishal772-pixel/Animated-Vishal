@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+}
+
+.add-to-cart {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: translateY(0);
+    box-shadow: 0 5px 0 #d35400;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.add-to-cart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 0 #52443a;
+}
+
+.add-to-cart:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 0 #d35400;
+}
