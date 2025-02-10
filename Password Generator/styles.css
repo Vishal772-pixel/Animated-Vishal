@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: Arial, sans-serif;
+}
+
+.password-container {
+    width: 300px;
+    text-align: center;
+}
+
+#password {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.strength-indicator {
+    height: 10px;
+    background: #eee;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.strength-bar {
+    display: block;
+    height: 100%;
+    width: 0;
+    background: red;
+    transition: width 0.3s, background 0.3s;
+}
+
+.strength-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
